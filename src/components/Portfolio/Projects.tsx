@@ -8,51 +8,27 @@ export const Projects = () => {
     {
       title: "Sistema de E-commerce",
       description: "Plataforma completa de e-commerce com painel administrativo, gestão de produtos, carrinho de compras e integração com gateways de pagamento.",
-      technologies: ["Laravel", "MySQL", "Vue.js", "Tailwind CSS", "Stripe API"],
+      technologies: ["Laravel", "MySQL", "Blade", "Tailwind CSS", "Pagseguro API"],
       githubUrl: "#",
       liveUrl: "#",
       featured: true
     },
     {
-      title: "API de Gestão Financeira",
-      description: "API REST robusta para gestão financeira pessoal com autenticação JWT, relatórios detalhados e dashboard interativo.",
-      technologies: ["PHP", "Laravel", "PostgreSQL", "Redis", "JWT"],
+      title: "Dashboard com Filament",
+      description: "Aplicação para controle de produtos e categorias, recursos detalhados com dashboard interativo.",
+      technologies: ["PHP", "Laravel", "Livewire", "MySQL"],
       githubUrl: "#",
       liveUrl: "#",
       featured: true
     },
     {
-      title: "Portal de Notícias",
-      description: "CMS completo para portal de notícias com sistema de categorias, comentários, busca avançada e painel administrativo.",
-      technologies: ["Laravel", "MySQL", "Bootstrap", "JavaScript", "Elasticsearch"],
+      title: "Sistema de Restaurante",
+      description: "Aplicação para restaurantes com recursos de realização de pedidos, meios de pagamentos e checkout.",
+      technologies: ["PHP", "Laravel", "Livewire", "MySQL"],
       githubUrl: "#",
       liveUrl: "#",
       featured: false
     },
-    {
-      title: "Sistema de Reservas",
-      description: "Aplicação para reserva de salas e recursos com calendário interativo, notificações em tempo real e relatórios.",
-      technologies: ["PHP", "Laravel", "React", "WebSockets", "MySQL"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    },
-    {
-      title: "Dashboard Analytics",
-      description: "Dashboard dinâmico para análise de dados com gráficos interativos, filtros avançados e exportação de relatórios.",
-      technologies: ["Laravel", "Chart.js", "Vue.js", "MySQL", "Redis"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    },
-    {
-      title: "API de Integração",
-      description: "Microserviço para integração entre sistemas legados e modernos com processamento assíncrono e alta disponibilidade.",
-      technologies: ["PHP", "Laravel", "Docker", "Redis", "RabbitMQ"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    }
   ];
 
   return (
@@ -80,11 +56,6 @@ export const Projects = () => {
                     <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
                       {project.title}
                     </CardTitle>
-                    {project.featured && (
-                      <Badge className="mb-2 bg-primary/20 text-primary border-primary/30">
-                        Destaque
-                      </Badge>
-                    )}
                   </div>
                 </div>
                 <CardDescription className="text-muted-foreground leading-relaxed">
@@ -117,10 +88,10 @@ export const Projects = () => {
                     >
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4 mr-2" />
-                        Código
+                        link do projeto
                       </a>
                     </Button>
-                    <Button 
+                    {/* <Button 
                       size="sm" 
                       className="flex-1 bg-primary hover:bg-primary/90"
                       asChild
@@ -129,7 +100,7 @@ export const Projects = () => {
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Demo
                       </a>
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </CardContent>

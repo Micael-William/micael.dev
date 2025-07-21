@@ -23,7 +23,6 @@ export const Skills = () => {
         { name: "PHP", icon: Code2 },
         { name: "Laravel", icon: Layers },
         { name: "MySQL", icon: Database },
-        { name: "PostgreSQL", icon: Database },
         { name: "REST APIs", icon: Globe },
         { name: "Redis", icon: Server }
       ]
@@ -35,7 +34,6 @@ export const Skills = () => {
         { name: "JavaScript", icon: Code2 },
         { name: "TypeScript", icon: Code2 },
         { name: "React", icon: Globe },
-        { name: "Vue.js", icon: Globe },
         { name: "Tailwind CSS", icon: Palette },
         { name: "Bootstrap", icon: Palette }
       ]
@@ -46,9 +44,6 @@ export const Skills = () => {
       skills: [
         { name: "Git", icon: GitBranch },
         { name: "Docker", icon: Container },
-        { name: "Linux", icon: Shield },
-        { name: "AWS", icon: Cloud },
-        { name: "Nginx", icon: Server },
         { name: "CI/CD", icon: Settings }
       ]
     }

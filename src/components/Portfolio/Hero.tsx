@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-
+import cv from "../../../public/curriculo-micaelw.pdf";
 export const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const download = {
+    link: 'micael-cv'
+  }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -18,22 +22,20 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Desenvolvendo
+            Desenvolvendo Soluções
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Especialista em <span className="text-primary font-semibold">PHP</span> e{" "}
-            <span className="text-accent font-semibold">Laravel</span> com 3 anos de experiência 
-            criando soluções web robustas e escaláveis
+            Olá me chamo Micael William Desenvolvedor sou Full-stack com foco em <span className="text-primary font-semibold">PHP</span> e{" "}
+            <span className="text-accent font-semibold">Laravel</span> criando soluções web robustas e escaláveis
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg shadow-glow hover:shadow-card transition-all duration-300"
-              onClick={() => scrollToSection('projects')}
             >
-              Ver Projetos
+              <a href={cv} download={download.link}>Baixar CV</a>
             </Button>
             <Button 
               variant="outline" 
@@ -70,19 +72,6 @@ export const Hero = () => {
               <Mail className="w-6 h-6" />
             </a>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => scrollToSection('about')}
-            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-          >
-            <span className="text-sm">Role para baixo</span>
-            <ArrowDown className="w-4 h-4" />
-          </Button>
         </div>
       </div>
     </section>

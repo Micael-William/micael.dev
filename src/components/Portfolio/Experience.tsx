@@ -4,37 +4,21 @@ import { Calendar, MapPin, Building } from "lucide-react";
 export const Experience = () => {
   const experiences = [
     {
-      title: "Desenvolvedor Full Stack",
-      company: "TechCorp Solutions",
-      period: "2022 - Presente",
+      title: "Freelancer Desenvolvedor Full-stack PHP e Laravel",
+      company: "",
+      period: "2023 - atual",
       location: "São Paulo, SP",
       description: [
-        "Desenvolvimento de aplicações web completas usando PHP/Laravel",
-        "Criação de APIs REST robustas e escaláveis",
-        "Implementação de interfaces responsivas com Vue.js e React",
-        "Otimização de performance e consultas de banco de dados",
-        "Mentoria de desenvolvedores juniores da equipe"
-      ],
-      technologies: ["PHP", "Laravel", "Vue.js", "MySQL", "Redis", "AWS"]
-    },
-    {
-      title: "Desenvolvedor Backend",
-      company: "Digital Innovations",
-      period: "2021 - 2022",
-      location: "São Paulo, SP",
-      description: [
-        "Desenvolvimento de microsserviços em PHP e Laravel",
+        "Desenvolvimento e ajuste em PHP e Laravel",
         "Integração com APIs de terceiros e sistemas legados",
-        "Implementação de testes automatizados e CI/CD",
         "Análise e otimização de performance de aplicações",
-        "Colaboração em arquitetura de sistemas distribuídos"
       ],
-      technologies: ["PHP", "Laravel", "PostgreSQL", "Docker", "Git"]
+      technologies: ["PHP", "Laravel", "MySQL", "Docker", "Git"]
     },
     {
-      title: "Desenvolvedor Web Júnior",
-      company: "StartupTech",
-      period: "2021 - 2021",
+      title: "Estágio em desenvolvimento Web PHP",
+      company: "Agência Destak de Publicidade",
+      period: "2022 - 2023",
       location: "São Paulo, SP", 
       description: [
         "Desenvolvimento de funcionalidades web em PHP",
@@ -43,7 +27,7 @@ export const Experience = () => {
         "Participação em code reviews e práticas ágeis",
         "Aprendizado contínuo de melhores práticas de desenvolvimento"
       ],
-      technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap", "jQuery"]
+      technologies: ["PHP", "JavaScript", "MySQL", "Bootstrap", "jQuery", "Git"]
     }
   ];
 

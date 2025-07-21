@@ -43,14 +43,14 @@ export const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "contato@exemplo.com",
-      link: "mailto:contato@exemplo.com"
+      value: "mw931991@gmail.com",
+      link: "mailto:mw931991@gmail.com"
     },
     {
       icon: Phone,
       title: "Telefone",
-      value: "+55 (11) 99999-9999",
-      link: "tel:+5511999999999"
+      value: "+55 (11) 96503-6406",
+      link: "tel:+5511965036406"
     },
     {
       icon: MapPin,
@@ -64,13 +64,13 @@ export const Contact = () => {
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/Micael-William",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/micael-william",
       color: "hover:text-blue-400"
     }
   ];
